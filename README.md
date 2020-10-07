@@ -1,11 +1,15 @@
 ## Base files for a docker-django application
 
-Download the set, then do
+Create a folder with your project name, cd into it and download this once inside it.
+Then run the command to create your django project:
 
-__docker-compose run web django-admin startproject whateverProjectName .__
+<pre><code>
+docker-compose run web django-admin startproject whateverProjectName .
+</code></pre>
 
-Then edit the project's composeexample/settings.py file and replace DATABASES with
+Once that's created, edit the project's composeexample/settings.py file and replace DATABASES with:
 
+<pre><code>
   DATABASES = {
       'default': {
           'ENGINE': 'django.db.backends.postgresql',
@@ -16,5 +20,6 @@ Then edit the project's composeexample/settings.py file and replace DATABASES wi
           'PORT': 5432,
       }
   }
+  </code></pre>
 
-run docker compose up and you're good to go
+run <pre><code>docker-compose up</code></pre> and you're good to go
