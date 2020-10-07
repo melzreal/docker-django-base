@@ -7,7 +7,7 @@ Then run the command to create your django project:
 docker-compose run web django-admin startproject whateverProjectName .
 </code></pre>
 
-Once that's created, edit the project's composeexample/settings.py file and replace DATABASES with:
+Once that's created, edit the project's whateverProjectName/settings.py file and replace DATABASES with:
 
 <pre><code>
   DATABASES = {
